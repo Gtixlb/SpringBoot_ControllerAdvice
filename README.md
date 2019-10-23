@@ -5,7 +5,7 @@
 >简单的说，进入Controller层的错误才会由@ControllerAdvice处理，拦截器抛出的错误以及访问错误地址的情况@ControllerAdvice处理不了，由SpringBoot默认的异常处理机制处理。
 
 1. 代码
-    
+ ```   
     /**
         controller层
     **/
@@ -15,7 +15,7 @@
         BaseResponse response = BaseResponseUtil.handleBusinessException(be);
         return response;
     }
-    
+```    
 ---------- 
 
     /**
