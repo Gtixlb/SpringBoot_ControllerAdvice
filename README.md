@@ -16,8 +16,8 @@
         return response;
     }
 ```    
----------- 
 
+``` 
     /**
         自定义异常类
     **/  
@@ -36,9 +36,10 @@
             this.code = code;
             this.msg = msg;
         }
-    }    
-----------  
-
+    } 
+``` 
+ 
+``` 
     /**
         全局异常类（@RestControllerAdvice)
     **/ 
@@ -47,8 +48,9 @@
             logger.error(be.getCode(),be.getMsg());
             BaseResponse response = BaseResponseUtil.handleBusinessException(be);
             return response;
-        }      
-----------  
+        } 
+``` 
+``` 
     /**
         统一返回工具类
     **/
@@ -75,7 +77,7 @@
     链接：https://www.jianshu.com/p/accec85b4039
     来源：简书
     著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
+``` 
 
 ## 2. 错误码转换
 1. 错误码转换（用于和第三方交互时响应的错误码转换再传给前端（或客户端）
@@ -127,8 +129,7 @@
         private T data;
     }
 ```
----
-    
+``` 
     /**
          统一返回工具类
     **/
@@ -161,9 +162,8 @@
             return response;
         }
     }
-
----
-
+``` 
+``` 
     /**
         Service层
     **/
@@ -175,5 +175,5 @@
             return BaseResponseUtil.success(time+"长");
         }
     }
-
+``` 
 
