@@ -99,6 +99,7 @@ The following guides illustrate how to use some features concretely:
 
     /**
         错误码转换类（统一返回工具类中）
+    **/
     static HashMap<String, Integer> businessCode = new HashMap<>();
             static {
                 businessCode.put(String.valueOf(ResultCodeConstant.FAIL), CodeConstant.PARAERROR);
