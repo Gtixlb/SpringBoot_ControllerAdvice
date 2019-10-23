@@ -14,7 +14,7 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
-##1. 全局异常处理
+## 1. 全局异常处理
 全局异常处理 @ControllerAdvice + @ExceptionHandler
 在spring 3.2中，新增了@ControllerAdvice 注解，可以用于定义@ExceptionHandler、@InitBinder、@ModelAttribute，并应用到所有@RequestMapping中。
 >简单的说，进入Controller层的错误才会由@ControllerAdvice处理，拦截器抛出的错误以及访问错误地址的情况@ControllerAdvice处理不了，由SpringBoot默认的异常处理机制处理。
@@ -92,7 +92,7 @@ The following guides illustrate how to use some features concretely:
     著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
-##2. 错误码转换
+## 2. 错误码转换
 1. 错误码转换（用于和第三方交互时响应的错误码转换再传给前端（或客户端）
 2. 代码
 
@@ -125,7 +125,7 @@ The following guides illustrate how to use some features concretely:
         }
 
 
-##3. 统一返回工具类（BaseResponseUtil)
+## 3. 统一返回工具类（BaseResponseUtil)
 1. 用响应工具类（BaseResponse）响应请求的格式，用统一返回工具类返回成功或失败。
 
 2. 代码
